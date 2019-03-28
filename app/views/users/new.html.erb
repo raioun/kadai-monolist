@@ -6,22 +6,22 @@
         <%= form_for(@user) do |f| %>
           <div class="form-group">
             <%= f.label :name, 'お名前' %>
-            <%= f.text_filed :name, class: 'form-control' %>
+            <%= f.text_field :name, class: 'form-control' %>
           </div>
           
           <div class="form-group">
             <%= f.label :email, 'メールアドレス' %>
-            <%= f.text_filed :email, class: 'form-control' %>
+            <%= f.email_field :email, class: 'form-control' %>
           </div>
           
           <div class="form-group">
             <%= f.label :password, 'パスワード' %>
-            <%= f.text_filed :password, class: 'form-control' %>
+            <%= f.password_field :password, class: 'form-control' %>
           </div>
           
           <div class="form-group">
             <%= f.label :password_confirmation, 'パスワード(確認) ' %>
-            <%= f.text_filed :password_confirmation, class: 'form-control' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
           
           <div class="text-right">
